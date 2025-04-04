@@ -35,12 +35,13 @@ This project uses an **ESP32** and a **NEO-6M GPS module** to track and send GPS
 
 ## Setup Instructions
 
-1. Clone this repository and open the `.ino` file in Arduino IDE.
-2. Install the following libraries:
+1. Clone this repository and open the `.ino` files in Arduino IDE.
+2. The sat_lock.ino file is to test the gps module and the googlesheet_map.ino is the main code.
+3. Install the following libraries:
    - `TinyGPS++`
    - `BluetoothSerial`
    - `HTTPClient`
-3. Replace your **WiFi credentials**:
+4. Replace your **WiFi credentials**:
    ```cpp
    const char* ssid = "your_wifi_ssid";
    const char* password = "your_wifi_password";
