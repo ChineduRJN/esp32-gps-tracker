@@ -59,7 +59,8 @@ https://maps.google.com/?q=LATITUDE,LONGITUDE
 Google Apps Script (for Google Sheets)
 1. Go to script.google.com and create a new project.
 2. Replace the code with the following:
-   function doPost(e) {
+   
+  function doPost(e) {
   var sheet = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID').getSheets()[0];
 
   var data = JSON.parse(e.postData.contents);
